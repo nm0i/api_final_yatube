@@ -35,9 +35,9 @@ requirements.txt, но для установки нужны [python3.8](python.o
 
 Получении публикации:
 
-    GET http://127.0.0.1:8000/api/v1/posts/ 
+    GET http://127.0.0.1:8000/api/v1/posts/
 
-Ответ, 200: 
+Ответ, 200:
     {
       "count": 123,
       "next": "http://api.example.org/accounts/?offset=400&limit=100",
@@ -62,7 +62,7 @@ requirements.txt, но для установки нужны [python3.8](python.o
 
     {
       "detail": "Учетные данные не были предоставлены."
-    }    
+    }
 
 Ответ, 403
 
@@ -78,7 +78,7 @@ requirements.txt, но для установки нужны [python3.8](python.o
 
 Обновление коментария:
 
-PUT http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/{id}/
+    PUT http://127.0.0.1:8000/api/v1/posts/{post_id}/comments/{id}/
 
     {
       "text": "string"
