@@ -63,14 +63,12 @@ class Comment(models.Model):
 
 
 class Follow(models.Model):
-    # Он же (раньше) followee
     user = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
         related_name='follower',
         verbose_name='Пользователь',
     )
-    # Он же (раньше) author
     following = models.ForeignKey(
         User,
         on_delete=models.CASCADE,
